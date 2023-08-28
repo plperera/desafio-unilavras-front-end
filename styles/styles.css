@@ -107,9 +107,7 @@ body {
     border-right: 5px solid #2e2170ff;
     border-bottom: 5px solid #2e2170ff;
     border-left: 5px solid rgb(115, 88, 250);
-
 }
-
 .projects-container {
     width: 100%;
     min-height: 50vh;
@@ -183,9 +181,12 @@ body {
 }
 .contact-container {
     width: 100%;
-    min-height: 50vh;
+    min-height: 80vh;
     padding: 0 5vw;
     padding-top: 8vh;
+    background-image: url(/images/contact-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .contact-container > h2{
     width: 100%;
@@ -197,4 +198,120 @@ body {
     font-size: 31px;
     border-left: 8px solid rgb(46, 33, 112);
     font-weight: 500;
+}
+.subcontainer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6vh;
+}
+.form-container {
+    width: 60%;
+    height: 500px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.form-container > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+.form-container > form > label {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding-left: 16px;
+}
+.form-container > form > input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 16px 16px;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 23px;
+}
+.form-container > form > button {
+    /* background-color: #6200ea; */
+    color: #ffffff;
+    padding: 16px 16px;
+    font-size: 21px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none; 
+    transform: translateZ(0);
+    width: 100%;
+    font-weight: 700;
+    background-image: radial-gradient( circle farthest-corner at 32.7% 82.7%,  rgba(98, 0, 234, 1) 8.3%, rgba(49, 0, 181, 1) 79.4% );
+    transition: background-position 0.3s;
+    background-size: 200% 200%;
+    background-position: right bottom;
+    margin-top: 10px;
+}
+.form-container > form > button:hover {
+    background-position: left top;
+    transform: translateY(-.2vh);
+}
+.social-cotainer {
+    width: 30%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    row-gap: 2vh;
+    flex-direction: column;
+}
+.social-cotainer a{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-cotainer a > div {
+    width: 80%;
+    /* background-color: #6200ea; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px;
+    cursor: pointer;
+    background-image: radial-gradient( circle farthest-corner at 32.7% 82.7%,  rgba(98, 0, 234, 0.5) 8.3%, rgba(48, 0, 181, 0.5) 79.4% );
+    transition: background-position 0.3s;
+    background-size: 200% 200%;
+    background-position: right bottom;
+    background-clip:padding-box ;
+    backdrop-filter: blur(15px);
+    border-radius: 4px;
+}
+.social-cotainer a > div > img {
+    max-width: 30px;
+    color: red;
+
+}
+.social-cotainer a > div > span {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-width: 25%;
+}
+.social-cotainer a > div:hover {
+    background-position: left top;
+    transform: translateY(-.2vh);
+    backdrop-filter: blur(150px);
 }
