@@ -8,7 +8,8 @@
 
 body {
   font-family: "Lexend Deca", sans-serif;
-  background-color: #090616;
+  /* background-color: #090616; */
+  background-color: #090715;
   color: #ffffff;
 }
 .menu-container {
@@ -69,7 +70,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;  
-    padding: 5vh 0; 
+    padding: 8vh 0; 
+    column-gap: 2vw;
+    overflow: hidden;
+}
+@keyframes sliding {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 .project-card {
     display: flex;
@@ -80,6 +100,8 @@ body {
     background-color: #19113b7e;
     border-radius: 10px;
     padding: 4vh 0;
+    animation: sliding 15s linear infinite;
+    flex-shrink: 0;
 }
 .projects-container > h2{
     width: 100%;
