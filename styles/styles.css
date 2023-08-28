@@ -61,10 +61,60 @@ body {
     justify-content: center;
     font-weight: 700;
 }
+.aboutme-container {
+    width: 100%;
+    min-height: 50vh;
+    padding: 0 5vw;
+    padding-top: 8vh;
+}
+.subcontainer-aboutme > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 350px;
+    font-size: 19px;
+    line-height: 35px;
+    text-align: center;
+}
+.subcontainer-aboutme > div > span > b{
+    color: #7358fa;
+    font-weight: 600;
+}
+.aboutme-container > h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 4px 0;
+    padding-left: 18px;
+    font-size: 31px;
+    border-left: 8px solid rgb(46, 33, 112);
+    font-weight: 500;
+}
+.subcontainer-aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10vh 0;
+}
+.subcontainer-aboutme img {
+    max-height: 280px;
+    max-width: 280px;
+    border-radius: 500px;
+    padding: 8px;
+    border-top: 5px solid rgb(115, 88, 250);
+    border-right: 5px solid #2e2170ff;
+    border-bottom: 5px solid #2e2170ff;
+    border-left: 5px solid rgb(115, 88, 250);
+
+}
+
 .projects-container {
     width: 100%;
     min-height: 50vh;
     padding: 0 5vw;
+    padding-top: 12vh;
 }
 .project-showcase-container {
     display: flex;
@@ -130,4 +180,21 @@ body {
 }
 .project-card h4{
     font-size: 15px;
+}
+.contact-container {
+    width: 100%;
+    min-height: 50vh;
+    padding: 0 5vw;
+    padding-top: 8vh;
+}
+.contact-container > h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 4px 0;
+    padding-left: 18px;
+    font-size: 31px;
+    border-left: 8px solid rgb(46, 33, 112);
+    font-weight: 500;
 }
