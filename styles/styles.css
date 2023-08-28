@@ -19,6 +19,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    padding: 0 5vw;
 }
 .menu-container div {
     width: 45vw;
@@ -26,8 +27,8 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
-.menu-container > h1 {
-    width: 15vw;
+.menu-container > img {
+    max-width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
